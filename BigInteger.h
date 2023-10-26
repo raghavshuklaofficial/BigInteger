@@ -1,8 +1,6 @@
-/*  create a c .h file in which you can perform addition , subtraction, multiplication, division, and modulus operations on two number 
-    which are greater than INT_MAX ,and store the result in a linked list.
-*/
-
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 struct node {
     int data;
