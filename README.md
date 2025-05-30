@@ -1,53 +1,27 @@
 
-# 🔢 BigInteger Implementation in C++
+# 🔢 BigInteger Implementation in C
 
-Welcome to the **BigInteger** 🚀 repository! This project is a **custom implementation of large integer arithmetic** using C++, mimicking Java's `BigInteger` class — ideal for handling numbers beyond native `int` or `long long` limits.
+Welcome to the **BigInteger** 🚀 repository! This project is a **custom implementation of large integer arithmetic** using C, mimicking Java's `BigInteger` class — ideal for handling numbers beyond native `int` or `long long` limits.
 
 ---
 
 ## 📦 Features
 
-| **Feature**         | **Icon** | **Details**                                |
-|---------------------|----------|--------------------------------------------|
-| Arbitrary Precision | 🧠       | Handles integers of virtually any size     |
-| Operator Overloading | ➕➖✖️➗  | Supports `+`, `-`, `*`, `/`, `%`            |
-| Clean OOP Design     | 🧱       | Class-based structure for scalability      |
+| **Feature**                       | **Details**                                |
+|-----------------------------------|--------------------------------------------|
+| Arbitrary Precision 🧠            | Handles integers of virtually any size     |
+| Operator Overloading ➕➖✖️➗    | Supports `+`, `-`, `*`, `/`, `%`            |
+| Modular Code Structure  🧱        | Functions split into .c and .h for scalability     |
 
 ---
-
-## 🏗️ Class Overview
-
-```cpp
-class BigInteger {
-public:
-    BigInteger(); // Default Constructor
-    BigInteger(std::string val); // Initialize from string
-
-    // Core Arithmetic Operators
-    BigInteger operator+(const BigInteger&) const;
-    BigInteger operator-(const BigInteger&) const;
-    BigInteger operator*(const BigInteger&) const;
-    BigInteger operator/(const BigInteger&) const;
-    BigInteger operator%(const BigInteger&) const;
-
-    // Utility
-    std::string toString() const;
-};
-````
-
 ---
 
 ## 🚀 Getting Started
 
-### 🔧 Prerequisites
-
-* C++11 or later
-* A C++ compiler (e.g., `g++`, `clang++`)
-
 ### 🧪 How to Compile & Run
 
 ```bash
-g++ -std=c++11 main.cpp BigInteger.cpp -o biginteger
+gcc main.c BigInteger.c -o biginteger
 ./biginteger
 ```
 
@@ -58,8 +32,8 @@ g++ -std=c++11 main.cpp BigInteger.cpp -o biginteger
 ```bash
 BigInteger/
 ├── BigInteger.h        # Header file with class definition
-├── BigInteger.cpp      # Class implementation
-├── main.cpp            # Example/test driver
+├── BigInteger.c        # Class implementation
+├── main.c              # Example/test driver
 └── README.md           # Project documentation
 ```
 
@@ -67,12 +41,18 @@ BigInteger/
 
 ## 🧪 Sample Usage
 
-```cpp
-BigInteger num1("123456789123456789");
-BigInteger num2("987654321987654321");
+```c
+#include "big_integer.h"
 
-BigInteger sum = num1 + num2;
-std::cout << "Sum: " << sum.toString() << std::endl;
+int main() {
+    BigInt a = createBigInt("123456789123456789123456789");
+    BigInt b = createBigInt("987654321987654321987654321");
+
+    BigInt result = addBigInt(a, b);
+    printBigInt(result);
+
+    return 0;
+}
 ```
 ---
 
