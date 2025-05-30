@@ -1,7 +1,7 @@
 
-# 🔢 BigInteger Implementation in C
+# 🔢 BigInteger Library
 
-Welcome to the **BigInteger** 🚀 repository! This project is a **custom implementation of large integer arithmetic** using C, mimicking Java's `BigInteger` class — ideal for handling numbers beyond native `int` or `long long` limits.
+Welcome to the **BigInteger Library** 🚀 repository! This project is a **custom implementation of large integer arithmetic** using C, mimicking Java's `BigInteger` class — ideal for handling numbers beyond native `int` or `long long` limits.
 
 ---
 
