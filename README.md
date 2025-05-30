@@ -32,3 +32,16 @@ public:
     // Utility
     std::string toString() const;
 };
+
+🚀 Getting Started
+🔧 Prerequisites
+C++11 or later
+
+A C++ compiler (e.g., g++, clang++)
+
+🧪 How to Compile & Run
+bash
+Copy
+Edit
+g++ -std=c++11 main.cpp BigInteger.cpp -o biginteger
+./biginteger
