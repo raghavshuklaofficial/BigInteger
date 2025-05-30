@@ -11,7 +11,7 @@ Welcome to the **BigInteger** 🚀 repository! This project is a **custom implem
 |-----------------------------------|--------------------------------------------|
 | Arbitrary Precision 🧠            | Handles integers of virtually any size     |
 | Operator Overloading ➕➖✖️➗    | Supports `+`, `-`, `*`, `/`, `%`            |
-| Modular Code Structure  🧱        | Functions split into '.c' and '.h' for scalability     |
+| Modular Code Structure  🧱        | Functions split into `.c` and `.h` for scalability     |
 
 ---
 ---
